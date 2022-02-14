@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CDN de Bootstrap para los iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <!-- Mi archivo de CSS-->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!--FAVICON-->
+    <link href="./images/ups.icon.png" rel="icon" type="image/x-icon" />
+    <title>Ríos&Bernal Asociados</title>
+  </head>
+  <body>
+  <!-----------------------------------------------
+            Aquí va el HEADER
+  ------------------------------------------------>  
+  <header>
+    <div class="p-3 text-center" style="height: 140px;">
+      <div class="mask" style="background-color: rgb(11, 19, 68);">
+        <div class="d-flex justify-content-center">
+          <div class="text-white m-4">
+            <h1 class="mb-3 fw-bold">PROVEEDORES DE SAIS - RÍOS & BERNAL ASOCIADOS</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-----------------------------------------------
+            Aquí va la BARRA DE NAVEGACIÓN
+  ------------------------------------------------>  
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mx-2">
+    <a class="navbar-brand" href="#">
+      <img src="./images/R&B navbar.png" alt="" width="50" height="50" class="d-inline-block align-text-center rounded-circle"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-bold text-center">
+            <!--Aqui empieza la lista dentro de la Barra de Navegación--> 
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Galería </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#introduccion">Introducción </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tiposDeSAIs">Tipos de SAIs </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dondeEstamos">Dónde Estamos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#nuestrasRedesSociales">Nuestras Redes Sociales </a>
+          </li>
+        </ul>          
+        <form class="d-flex">
+          <button class="btn btn-primary btn-primary-outline-success" type="button">Regístrate</button>
+        </form>
+      </div>
+  </nav>
+  <!-----------------------------------------------
+            Aquí va el Slidder de imágenes
+  ------------------------------------------------>           
+  <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./images/slideups1.png" class="w-100" alt="slideups1">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./images/slideups2.png" class="w-100" alt="slideups2">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./images/slideups3.png" class="w-100"  alt="slideups3">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="./images/slideups4.png" class="w-100" alt="slideups4">
+      </div>
+    </div>
+      <!--Controles para poder mover las imágenes del Slidder-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previa</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+<!-----------------------------------------------
+            Aquí va la Introducción
+  ------------------------------------------------>       
+  <section id="introduccion" class="w-50 mx-auto text-center mb-5 pt-5">    
+    <h1 class="p-3 fs-2 border-top border-3" ><span class="text-primary">Ríos&Bernal Asociados</span> cuenta con más de 30 años de experiencia en ventas y mantenimiento de <span class="text-primary">Sistemas de Alimentación Ininterrumpida.</span></h1>
+      <p class="p-3 fs-4"></span>En nuestra empresa encontramos soluciones a todo tipo de problemas de suministro eléctrico que puedan acaecer tanto en su empresa como en su hogar.</p>
+  </section>
+<!------------------------------------------------------
+            Aquí va la Sección Tipos De SAIs (CARDS)  
+  -----------------------------------------------------> 
+<section id="tiposDeSAIs" class="p-4">
+  <h2 class="text-center text-primary p-3"><span class="p-3 border-top border-3">¿Qué tipo de SAI necesitas?</span></h2>
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-lg-3 g-4">
+      <div class="col-xs-12 col-md-6 col-lg-3 bg-secondary">
+        <div class="card h-100">
+          <img src="./images/sai_online.jpeg" class="card-img-top" alt="saiOnline">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center fw-bolder">Online</h5>
+            <p class="card-text">Garantiza una protección total, debido a que sus baterías siempre se van cargando de la red.</p>
+            <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#saiOnline">Más información</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 bg-secondary">
+        <div class="card h-100">
+          <img src="./images/sai_offline.jpg" class="card-img-top" alt="saiOffline">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center fw-bolder">Off-line</h5>
+            <p class="card-text">Recomendable utilizar este tipo de SAIs en zonas con pocas anomalías eléctricas y buena calidad de red.</p>
+            <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#saiOffline">Más información</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 bg-secondary">
+        <div class="card h-100">
+          <img src="./images/sai_interactivo.jpg" class="card-img-top" alt="saiInteractivo">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center fw-bolder">Interactivo</h5>
+            <p class="card-text">Añade un plus de seguridad a los SAIs Off-line, consiguiendo detectar variaciones en la red eléctrica.</p>
+            <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#saiInteractivo">Más información</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3 bg-secondary">
+        <div class="card h-100">
+          <img src="./images/sai_avr.jpg" class="card-img-top" alt="saiAvr">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center fw-bolder">AVR</h5>
+            <p class="card-text">Estabiliza la tensión en su salida. No dispone de baterías para suministrar electricidad a los equipos a él conectados.</p>
+            <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#saiAvr">Más información</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal -->
+    <div class="modal fade" id="saiOnline" tabindex="-1" aria-labelledby="saiOnlineLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary" id="saiOnlineLabel">Más información sobre este SAI.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            El <b>SAI On-Line</b> realiza una doble conversión de la energía eléctrica que recibe, transformándola en continua y después a alterna de nuevo, eliminando de esta manera todos los problemas que pueda tener. Un SAI On-Line siempre proporciona energía eléctrica directamente desde sus baterías mientras estas se van cargando de la red, y esto es lo que garantiza que la protección contra cualquier problema de la red eléctrica sea total. Debido a su alta fiabilidad, la tecnología On-Line ocupa el sector profesional en el mercado de SAIs y está generalmente destinada a proteger servidores, equipos industriales o cualquier instalación informática que por su importancia o coste necesite la seguridad de no verse afectados por problemas derivados de la red eléctrica.
+            <b>Aplicaciones:</b> servidores, clusters de equipos, y en general instalaciones informáticas críticas o imprescindible (redes de datos, servidores,telecomunicaciones, industria…).
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="saiOffline" tabindex="-1" aria-labelledby="saiOffline" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary" id="saiOfflineLabel">Más información sobre este SAI.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Este SAI dotado con tecnología <b>Off-Line</b> suministra la corriente eléctrica sin ningún filtro a los dispositivos conectados, este tipo de tecnología carece de AVR (Regulador de voltaje).</p>
+            <p>El SAI Off-Line solamente empezará a funcionar cuando detecte un fallo de corriente eléctrica, es en este momento preciso cuando el SAI conmuta a modo baterías, es decir se comenzará a suministrar la energía que ha ido almacenando en sus baterías a los dispositivos conectados.</p> 
+            <p>Estos SAIs necesitan un tiempo de conmutación (normalmente 2-10 ms) para pasar a modo baterías, es preciso tener este dato en cuenta a la hora de conectar dispositivos sensibles que pudieran verse afectados en el proceso de conmutación,  es impórtate indicar que este tipo de SAIs son solo recomendables para las zonas que disponen de una red estable ya que al no realizar ningún filtrado de la corriente, solo protegen ante un corte de suministro eléctrico.</p>
+            <p><b>Aplicaciones SAI Off-Line:</b> Dispositivos poco sensibles como ordenadores personales de gama baja, televisores, monitores, router, etc. Es recomendable utilizar este tipo de SAIs en zonas con pocas anomalías eléctricas y buena calidad de red.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="saiInteractivo" tabindex="-1" aria-labelledby="saiInteractivoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary" id="saiInteractivoLabel">Más información sobre este SAI.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Un <b>SAI Interactivo</b> o In-Line ofrece una protección eléctrica intermedia, su tecnología es similar a la de los SAIs Off-Line pero incorpora una serie de filtros activos como microprocesador que controla las fluctuaciones de la red eléctrica en ±15%, regulando la tensión de salida (efecto Buck/Boos AVR Integrado).</p>
+            <p>Habitualmente este tipo de SAIs devuelven una onda pseudo-sinusoidal o sinusoidal pura dependiendo del modelo. Este proceso de filtrado y mejora de la corriente que llega a los dispositivos conectados al SAI se realiza sin que entren a funcionar las baterías, por lo que la protección con un SAI interactivo es superior aún sin sufrir apagones.</p> 
+            <p>Al igual que los SAI Off-line tienen un pequeño tiempo de conmutación en el que no hay suministro eléctrico, normalmente de 2-10 ms, es por este motivo por el que se tiene que tener especial cuidado a la hora de conectar dispositivos sensibles que pudieran verse afectados en el tiempo de conmutación a modo baterías.</p>
+            <p><b>Aplicaciones SAI Interactivo:</b> Ordenadores de gama media y baja, consolas de juegos, pequeños servidores de redes, equipos de oficina, router, cámaras de seguridad, videograbadores, etc. Para proteger de forma adecuada equipos específicos como bombas de calor, calderas, motores eléctricos o general equipos con fuentes de alimentación con PFC activo (Corrección del factor de potencia) es necesario la utilización de SAIs con de salida  sinusoidal pura. Los SAIs de línea interactiva con onda sinusoidal pura son especialmente silenciosos por lo que pueden estar indicados para entornos de trabajo que requieran una protección eléctrica de calidad con mínimo ruido.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="saiAvr" tabindex="-1" aria-labelledby="saiAvr" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary" id="saiAvrLabel">Más información sobre este SAI.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>El <b>AVR</b> (Automatic Voltage Regulator) no podría considerarse estrictamente un SAI. En realidad, es un equipo electrónico que se utiliza para regular el voltaje, el funcionamiento básicamente consiste en regular el flujo eléctrico, controlando las subidas y bajadas de tensión (picos) que se dan en la red eléctrica proporcionando una tensión constante en la salida (230V) de esta forma protegemos los equipos conectados al regulador de voltaje (AVR).</p>
+            <p>La diferencia con un Sistema de Alimentación Ininterrumpida es fundamentalmente que los AVR no disponen de baterías, por lo que en caso de un corte de suministro eléctrico un AVR no pueden mantener los equipos conectados a él en funcionamiento. Visto lo cual, tenemos que señalar que la única función de un AVR es estabilizar la tensión en su salida.</p> 
+            <p>Es imprescindible tener claro el funcionamiento de un AVR y de un SAI para poder determinar qué dispositivo tenemos que instalar para proteger nuestro equipo. Es importante destacar que los SAIs con tecnología interactiva disponen de AVR lo que proporciona un mayor nivel de seguridad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+ <!-----------------------------------------------
+            Aquí va la Sección DÓNDE ESTAMOS
+  ------------------------------------------------>  
+<section id="dondeEstamos">
+    <div class="d-flex text-center justify-content-center mt-5 mx-2">
+      <h1 class="d-flex text-center fs-2 justify-content-center text-primary border-top border-3 pt-3">¡Ven a conocernos!</h1>
+    </div>    
+    <div class="mt-3 w-100 text-center border-5">
+      <iframe class="w-100 px-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.659591289173!2d-4.954259177689823!3d36.4899371399426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72d9da84eb96bd%3A0x49412e3f72cb884!2sPuerto%20Ban%C3%BAs!5e0!3m2!1ses!2ses!4v1644777928994!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div> 
+    <div class="mx-4 mt-3 mb-5">
+      <h2>Estamos ubicados en <span class="text-primary">Puerto Banús, Marbella</span>.</h2>
+      <h5>Hemos elegido el <span class="text-primary">Centro Comercial Puerto Banús</span> por ser una de las zonas cosmopolitas y de mayor afluencia turística por excelencia en Andalucía.</h5>
+      <h5>Situados en la <span class="text-primary">C/Jesus Puente</span>, <span class="text-primary">29</span>, abrimos nuestras puertas de <span class="text-primary">Lunes a Sábado</span> en horario ininterrumpido de <span class="text-primary">10:00 a 20:00</span>.</h5>  
+    </div>
+</section>
+ <!-------------------------------------------------
+            Aquí va la Sección CONTACTO
+  ------------------------------------------------>  
+  <section id="contacto" class="container p-4 mw-500 d-block">
+    <div class="text-center mb-4">
+      <h2 class="text-primary"><span class="p-3 border-top border-3 mb-5">Contacta con nosotros.</span></h2>
+      <div><img src="./images/atencion_al_cliente.jpeg" alt="atencionalcliente" class="img-fluid w-80 pt-2"></div>
+    </div>
+    <form method="POST" data-netlify="true" action="#">    
+          <div class="mb-3">            
+            <input type="input" class="form-control" id="name" name="name" placeholder="Escribe aquí tu nombre.">
+          </div> 
+          <div class="mb-3">           
+            <input type="email" class="form-control" id="email" name="email" placeholder="Escribe aquí tu correo.">
+          </div>        
+          <div class="mb-3">
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Introduce tu número de teléfono.">
+          </div>
+        <div class="mb-3">       
+          <textarea class="form-control" name="message" id="message" placeholder="Cuéntanos cómo podemos ayudarte." rows="4"></textarea>
+        </div>
+        <div class="mb-3 text-center">
+          <button type="submit" class=" btn btn-primary w-30 fs-5">Envía tu Mensaje.</button>
+        </div>
+    </form>
+      <!--Imagen Vectorial-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,202.7C384,192,480,96,576,90.7C672,85,768,171,864,192C960,213,1056,171,1152,133.3C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+<!------------------------------------------------
+            Aquí va el Footer (REDES SOCIALES)
+  ------------------------------------------------> 
+<footer id="nuestrasRedesSociales" class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3 pt-3">1990-2022 Ríos&Bernal Asociados. &copy; Todos los Derechos Reservados 2022.</p>
+    <div>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+</footer>
+<!-----------------------------------------------
+            SCRIPTS
+  ------------------------------------------------> 
+    <!-- Mi archivo de Javascript-->
+    <script src="./javascripts/javascripts.js"></script>
+    <!-- Bundle de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
