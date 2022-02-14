@@ -6,162 +6,106 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- CDN de bootstraps para los iconos-->
+    <!-- CDN de Bootstrap para los iconos-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <!-- mi archivo de css-->
+    <!-- Mi archivo de CSS-->
     <link rel="stylesheet" href="./styles/styles.css">
     <!--FAVICON-->
     <link href="./images/ups.icon.png" rel="icon" type="image/x-icon" />
     <title>Ríos&Bernal Asociados</title>
   </head>
   <body>
-
   <!-----------------------------------------------
-            Aquí va el Encabezado
+            Aquí va el HEADER
   ------------------------------------------------>  
   <header>
     <div class="p-3 text-center" style="height: 140px;">
-    <div class="mask" style="background-color: rgb(11, 19, 68);">
-      <div class="d-flex justify-content-center">
-        <div class="text-white m-4">
-          <h1 class="mb-3 fw-bold">PROVEEDORES DE SAIS - RÍOS & BERNAL ASOCIADOS</h1>
+      <div class="mask" style="background-color: rgb(11, 19, 68);">
+        <div class="d-flex justify-content-center">
+          <div class="text-white m-4">
+            <h1 class="mb-3 fw-bold">PROVEEDORES DE SAIS - RÍOS & BERNAL ASOCIADOS</h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
-
-
-
-
-
-
-
-
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light"> <!--al añadir p-3 al final conseguimos q la barra de navegación sea máyor que el establecido por defecto-->
-<!-- añadimos un id para dar estilo en nuestra archivo css-->    
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-       <img src="./images/R&B navbar.png" alt="" width="50" height="50" class="d-inline-block align-text-center rounded-circle">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  </header>
+  <!-----------------------------------------------
+            Aquí va la BARRA DE NAVEGACIÓN
+  ------------------------------------------------>  
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light mx-2">
+    <a class="navbar-brand" href="#">
+      <img src="./images/R&B navbar.png" alt="" width="50" height="50" class="d-inline-block align-text-center rounded-circle"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-bold text- ">
-            
-            <!--Aqui empieza la lista-->
-
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-bold text-center">
+            <!--Aqui empieza la lista dentro de la Barra de Navegación--> 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> <!--con index.html creamos un enlace a la pagina principal-->
+            <a class="nav-link" href="#galeria">Galería </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#equipo">Equipo</a>
+            <a class="nav-link" href="#introduccion">Introducción </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#seccion-contacto">Contacto</a>
+            <a class="nav-link" href="#tiposDeSAIs">Tipos de SAIs </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#equipo">Equipo</a>
+            <a class="nav-link" href="#dondeEstamos">Dónde Estamos </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#equipo">Equipo</a>
+            <a class="nav-link" href="#contacto">Contacto </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#equipo">Equipo</a>
+            <a class="nav-link" href="#nuestrasRedesSociales">Nuestras Redes Sociales </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#equipo">Equipo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cuatroCol">Equipo</a>
-          </li>
-        </ul>  
-
-
-
-
-
-
-
-
-
-
-
-          
+        </ul>          
         <form class="d-flex">
-          <button class="btn btn-primary btn-primary-outline-success" type="button">Regístrate</button><!-- el boton lo cambiamos de tipo submit a tipo boton-->
-          <!--Cambiamos Search por Subscríbete-->
-          <!-- al poner primary antes de outline-success el boton pasa a ser azul también cuando non estamos con el raton por encima del mismo(antes venía de color verde por defecto-->
+          <button class="btn btn-primary btn-primary-outline-success" type="button">Regístrate</button>
         </form>
       </div>
-    </div>
   </nav>
-
   <!-----------------------------------------------
             Aquí va el Slidder de imágenes
   ------------------------------------------------>           
-  <!--elegimos de la pagina de Bootstrap el Slidder con controles-->
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div id="galeria" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000"><!-- las imagenes estan dentro del contenedor con la clase carousel-item. Ese es el bloque principal q tiene la clase de carrousel slide-->
-        <!--añadiendo data-bs-interval="3000" le decimos cada cuantos milisegundos es el intervalo con el que cambian las imagenes-->
-        <!-- al añadir aquí active indicamos que slidder empezará nada mas cargar la pagina por esa imagen en concreto-->
-        <img src="./images/slideups1.png" class="d-block w-100 m-auto" alt="slideups1"><!--dentro de cada alt ponemos una descripcion-->
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="./images/slideups1.png" class="w-100" alt="slideups1">
       </div>
-
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="./images/slideups2.png" class="d-block w-100 m-auto" alt="slideups2">
+        <img src="./images/slideups2.png" class="w-100" alt="slideups2">
       </div>
-
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="./images/slideups3.png" class="d-block w-100 h-5 m-auto"  alt="slideups3">
+        <img src="./images/slideups3.png" class="w-100"  alt="slideups3">
       </div>
-
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="./images/slideups4.png" class="d-block w-100 h-5 m-auto" alt="slideups4">
+        <img src="./images/slideups4.png" class="w-100" alt="slideups4">
       </div>
-
-
-
-    </div><!--estos 2 botones de a continuacion son los controles para poder mover los slides-->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    </div>
+      <!--Controles para poder mover las imágenes del Slidder-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previa</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
-
 <!-----------------------------------------------
             Aquí va la Introducción
   ------------------------------------------------>       
-  
-  <section class="w-50 mx-auto text-center pt-5" id="introduccion"> <!-- con la clase w y el valor 50 (w-50) limitamos el ancho de la seccion al 50%. Con mx-auto le ponemos un margin horizontal automático para centrarlo. Con text-center alineamos el texto-->
-  <!--le ponemos un id introduccion que usaremos para cambiar el estilo en nuestro archivo css-->  
-  <!-- le ponemos a la sección un padding por arriba de 5-->
-      <h1 class="p-3 fs-2 border-top border-3" >Ríos&Bernal Asociados cuenta con más de 30 años de experiencia en ventas y mantenimiento de <span class="text-primary">Sistemas de Alimentación Ininterrumpida.</span></h1><!--le ponemos una clase a span y le cambiamos el color con text-primary -->
-      <!--le ponemos un borde por arriba y también añadimos un tamaño al borde-->
+  <section id="introduccion" class="w-50 mx-auto text-center mb-5 pt-5">    
+    <h1 class="p-3 fs-2 border-top border-3" ><span class="text-primary">Ríos&Bernal Asociados</span> cuenta con más de 30 años de experiencia en ventas y mantenimiento de <span class="text-primary">Sistemas de Alimentación Ininterrumpida.</span></h1>
       <p class="p-3 fs-4"></span>En nuestra empresa encontramos soluciones a todo tipo de problemas de suministro eléctrico que puedan acaecer tanto en su empresa como en su hogar.</p>
   </section>
-
-<!-----------------------------------------------
-            Aquí va la Sección Servicios  
-  ------------------------------------------------> 
-<!-- esta seccion la vamos a implementar con el Grid System de Bootstrap-->
-<section id="cuatroCol" class="p-4">
-  <h2 class="text-center text-primary p-4">¿Qué tipo de SAI necesito?</h2>
+<!------------------------------------------------------
+            Aquí va la Sección Tipos De SAIs (CARDS)  
+  -----------------------------------------------------> 
+<section id="tiposDeSAIs" class="p-4">
+  <h2 class="text-center text-primary p-3"><span class="p-3 border-top border-3">¿Qué tipo de SAI necesitas?</span></h2>
   <div class="container-fluid">
     <div class="row row-cols-1 row-cols-lg-3 g-4">
-      <!-- TODO ESTO ESTÁ EN getbootstrap.com > Layout > columns ---->
-      <!-- PARA ESPACIAR EL CONTENIDO DE LAS COLUMNAS, SE USA gx seguido de guión y un número. EL GUTTER ES UN ESPACIADO ENTRE CONTENIDO DE COLUMNAS -->
-      <!-- PARA COLOCAR LAS COLUMNAS ALINEADAS EN VERTICAL, ARRIBA EN ROW, HAY QUE UTILIZAR CLASES DE align-items QUE REGULAN TODAS LAS COLUMNAS JUNTAS, A LA VEZ-->
-      <!-- PARA INDICAR CADA COLUMNA POR SEPARADO: UTILIZAR LAS CLASES: align-self: estas van en cada columna-->
-      <!-- cuidado con usar margin en las columnas: desplaza la distribución del grid -->
       <div class="col-xs-12 col-md-6 col-lg-3 bg-secondary">
         <div class="card h-100">
           <img src="./images/sai_online.jpeg" class="card-img-top" alt="saiOnline">
@@ -204,9 +148,6 @@
       </div>
     </div>
   </div>
-
-
-
     <!-- Modal -->
     <div class="modal fade" id="saiOnline" tabindex="-1" aria-labelledby="saiOnlineLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -217,7 +158,6 @@
           </div>
           <div class="modal-body">
             El <b>SAI On-Line</b> realiza una doble conversión de la energía eléctrica que recibe, transformándola en continua y después a alterna de nuevo, eliminando de esta manera todos los problemas que pueda tener. Un SAI On-Line siempre proporciona energía eléctrica directamente desde sus baterías mientras estas se van cargando de la red, y esto es lo que garantiza que la protección contra cualquier problema de la red eléctrica sea total. Debido a su alta fiabilidad, la tecnología On-Line ocupa el sector profesional en el mercado de SAIs y está generalmente destinada a proteger servidores, equipos industriales o cualquier instalación informática que por su importancia o coste necesite la seguridad de no verse afectados por problemas derivados de la red eléctrica.
-
             <b>Aplicaciones:</b> servidores, clusters de equipos, y en general instalaciones informáticas críticas o imprescindible (redes de datos, servidores,telecomunicaciones, industria…).
           </div>
         </div>
@@ -234,7 +174,6 @@
             <p>Este SAI dotado con tecnología <b>Off-Line</b> suministra la corriente eléctrica sin ningún filtro a los dispositivos conectados, este tipo de tecnología carece de AVR (Regulador de voltaje).</p>
             <p>El SAI Off-Line solamente empezará a funcionar cuando detecte un fallo de corriente eléctrica, es en este momento preciso cuando el SAI conmuta a modo baterías, es decir se comenzará a suministrar la energía que ha ido almacenando en sus baterías a los dispositivos conectados.</p> 
             <p>Estos SAIs necesitan un tiempo de conmutación (normalmente 2-10 ms) para pasar a modo baterías, es preciso tener este dato en cuenta a la hora de conectar dispositivos sensibles que pudieran verse afectados en el proceso de conmutación,  es impórtate indicar que este tipo de SAIs son solo recomendables para las zonas que disponen de una red estable ya que al no realizar ningún filtrado de la corriente, solo protegen ante un corte de suministro eléctrico.</p>
-
             <p><b>Aplicaciones SAI Off-Line:</b> Dispositivos poco sensibles como ordenadores personales de gama baja, televisores, monitores, router, etc. Es recomendable utilizar este tipo de SAIs en zonas con pocas anomalías eléctricas y buena calidad de red.</p>
           </div>
         </div>
@@ -251,7 +190,6 @@
             <p>Un <b>SAI Interactivo</b> o In-Line ofrece una protección eléctrica intermedia, su tecnología es similar a la de los SAIs Off-Line pero incorpora una serie de filtros activos como microprocesador que controla las fluctuaciones de la red eléctrica en ±15%, regulando la tensión de salida (efecto Buck/Boos AVR Integrado).</p>
             <p>Habitualmente este tipo de SAIs devuelven una onda pseudo-sinusoidal o sinusoidal pura dependiendo del modelo. Este proceso de filtrado y mejora de la corriente que llega a los dispositivos conectados al SAI se realiza sin que entren a funcionar las baterías, por lo que la protección con un SAI interactivo es superior aún sin sufrir apagones.</p> 
             <p>Al igual que los SAI Off-line tienen un pequeño tiempo de conmutación en el que no hay suministro eléctrico, normalmente de 2-10 ms, es por este motivo por el que se tiene que tener especial cuidado a la hora de conectar dispositivos sensibles que pudieran verse afectados en el tiempo de conmutación a modo baterías.</p>
-
             <p><b>Aplicaciones SAI Interactivo:</b> Ordenadores de gama media y baja, consolas de juegos, pequeños servidores de redes, equipos de oficina, router, cámaras de seguridad, videograbadores, etc. Para proteger de forma adecuada equipos específicos como bombas de calor, calderas, motores eléctricos o general equipos con fuentes de alimentación con PFC activo (Corrección del factor de potencia) es necesario la utilización de SAIs con de salida  sinusoidal pura. Los SAIs de línea interactiva con onda sinusoidal pura son especialmente silenciosos por lo que pueden estar indicados para entornos de trabajo que requieran una protección eléctrica de calidad con mínimo ruido.</p>
           </div>
         </div>
@@ -266,160 +204,78 @@
           </div>
           <div class="modal-body">
             <p>El <b>AVR</b> (Automatic Voltage Regulator) no podría considerarse estrictamente un SAI. En realidad, es un equipo electrónico que se utiliza para regular el voltaje, el funcionamiento básicamente consiste en regular el flujo eléctrico, controlando las subidas y bajadas de tensión (picos) que se dan en la red eléctrica proporcionando una tensión constante en la salida (230V) de esta forma protegemos los equipos conectados al regulador de voltaje (AVR).</p>
-
             <p>La diferencia con un Sistema de Alimentación Ininterrumpida es fundamentalmente que los AVR no disponen de baterías, por lo que en caso de un corte de suministro eléctrico un AVR no pueden mantener los equipos conectados a él en funcionamiento. Visto lo cual, tenemos que señalar que la única función de un AVR es estabilizar la tensión en su salida.</p> 
             <p>Es imprescindible tener claro el funcionamiento de un AVR y de un SAI para poder determinar qué dispositivo tenemos que instalar para proteger nuestro equipo. Es importante destacar que los SAIs con tecnología interactiva disponen de AVR lo que proporciona un mayor nivel de seguridad.</p>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
 </section>
-
  <!-----------------------------------------------
-            Aquí va la Sección Acerca de Nosotros
+            Aquí va la Sección DÓNDE ESTAMOS
   ------------------------------------------------>  
-
-<section>
-    <div class="w-75 m-auto text-center" id="equipo">
-        <h1 class="mb-5 fs-2">Equipo pequeño con<span class="text-primary"> Resultados Grandes</span></h1>
-        <p class="fs-4">Siempre buscamos las personas adecuadas para que trabajen con nosotros. Si te sientes listo para este reto, te esperamos para que te unas a nosotros</p>
+<section id="dondeEstamos">
+    <div class="d-flex text-center justify-content-center mt-5 mx-2">
+        <h1 class="d-flex text-center fs-2 justify-content-center text-primary border-top border-3 pt-3">¡Ven a conocernos!</h1>
     </div>    
-    <div class="mt-5 text-center">
-        <img class="img-fluid" src="./images/empleados.jpeg" alt="equipo">
-        <!-- con img.fluid la imagen ocupa el 100% del contenedor padre-->
+    <div class="mt-3 w-100 text-center border-5">
+      <iframe class="w-100 px-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.659591289173!2d-4.954259177689823!3d36.4899371399426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72d9da84eb96bd%3A0x49412e3f72cb884!2sPuerto%20Ban%C3%BAs!5e0!3m2!1ses!2ses!4v1644777928994!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div> 
-
-    <div id="local" class="border-top border-2"><!-- al contenedor que contiene el mapa le vamos a poner un borde-->
-        <div class="bg-secondary">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3207.659591289173!2d-4.954259177689823!3d36.4899371399426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72d9da84eb96bd%3A0x49412e3f72cb884!2sPuerto%20Ban%C3%BAs!5e0!3m2!1ses!2ses!4v1644777928994!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div>
-            <div class="wrapper">
-                <h2>Estamos ubicados Puerto Banús, Marbella. </h2>
-                <h2 class="text-primary mb-4" id="typewriter"></h2>
-                <p class="fs-5 text-body">Hemos elegido el centro Comercial de Puerto Banús (Marbella) por ser la zona turística y comspolita por excelencia de Andalucía. </p><!-- text-body es otro color por defecto de texto de bootstrap-->
+    <div class="mx-4 my-5">
+      <h2>Estamos ubicados en <span class="text-primary">Puerto Banús, Marbella</span>.</h2>
+      <h5>Hemos elegido el <span class="text-primary">Centro Comercial Puerto Banús</span> por ser una de las zonas cosmopolitas y de mayor afluencia turística por excelencia en Andalucía.</h5>
+      <h5>Situados en la <span class="text-primary">C/Jesus Puente</span>, <span class="text-primary">29</span>, abrimos nuestras puertas de <span class="text-primary">Lunes a Sábado</span> en horario ininterrumpido de <span class="text-primary">10:00 a 20:00</span>.</h5>  
             </div>
-        </div>
-    </div>
-</section>
-
-
- <!-----------------------------------------------
-            Aquí va la Sección Trabajo PDF
-  ------------------------------------------------>  
-<!--
-</section>
-<section id="section-pdf">
-  <h2>PDF</h2>
-  <iframe src="https://drive.google.com/file/d/1RHf1tay2GtcBrjpEP8uJ8rU_AWQb2GiQ/preview" allow="autoplay"></iframe>
-</section>
--->
-
-
-</section>
-<section id="section-pdf" class="text-center">
-  <h2>PDF</h2>
-  <iframe src="https://drive.google.com/file/d/1t95LEfG-spgfrB0hOB1MJyGtx9-WpBTW/preview" allow="autoplay"></iframe>
-</section>
-<!--
-  <section>
-  <iframe src="./docs/RÍOS GONZÁLEZ, JOSÉ ANTONIO. TRABAJO PERIFÉRICOS - SAI. SISTEMAS INFORMÁTICOS.pdf" height="100%" width="100%"></iframe>
- </section>
--->
-
-
- <!-----------------------------------------------
-            Aquí va la Sección Formulario Background
-  ------------------------------------------------>  
-
-<section id="seccion-contacto" class="border-bottom border-secondary border-2"><!-- border-secondary es un color -->
-    <div id="bg-contacto">
-        <!--a continuacion usamos una imagen vectorial como fondo extraida de la pagina getwaves.io-->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,202.7C384,192,480,96,576,90.7C672,85,768,171,864,192C960,213,1056,171,1152,133.3C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-
-    </div>
-
-<!-----------------------------------------------
-            Aquí va la Sección Formulario
-  ------------------------------------------------> 
-
-
-
-
-
-
-
-
-
-
-  <div class="container" id="contenedor-formulario">
-      <div id="titulo-formulario" class="text-center mb-4">
-          <div><img src="./images/atencion_al_cliente.jpeg" alt="contacto" class="img-fluid"></div>
-          <h5>Contacte con nosotros.</h5>
       </div>
-      <form action="">
-
-        <div class="mb-3">
-            <!--quitamos los label pq no los vamos a necesitar-->
-            <input type="email" class="form-control" id="email" placeholder="Escriba aquí su correo." required>
-          </div>
-
-          <div class="mb-3">
-            <input type="text" class="form-control" id="nombre" placeholder="Escriba aquí su nombre." required>
-          </div>
-
-          <div class="mb-3">
-            <input type="tel" class="form-control" id="tel" placeholder="Introduzca su número de teléfono" required>
-          </div>
-          
-          <div class="mb-3">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Cuéntenos en qué le podemos ayudar."></textarea>
-          </div>
-          <div class="mb-3">
-              <!--btn detras del igual es la clase de los botones.-->
-            <button class="btn btn-primary w-100 fs-5">Enviar Mensaje</button>
-          </div>
-
-      </form><!-- aqui ponemos el formulario-->
-  </div>
-
+    </div>
 </section>
-
-
-
-
-
-
-<!-----------------------------------------------
-            Aquí va el Footer
+ <!-------------------------------------------------
+            Aquí va la Sección CONTACTO
+  ------------------------------------------------>  
+<section id="contacto" class="border-bottom border-secondary border-2 mt-5 mx-5">
+    <div class="text-center mb-4">
+        <h1 class="d-flex text-center fs-2 justify-content-center text-primary mb-3 pt-3"><span class="mb-3 pt-3 border-top border-3">Contacta con nosotros.</span></h1>
+            <div><img src="./images/atencion_al_cliente.jpeg" alt="contacto" class="img-fluid"></div>
+    </div>
+    <div class="w-70">
+        <form class="text-center">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="nombre" placeholder="Escribe aquí tu nombre." required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Escribe aquí tu correo." required>
+            </div>
+            <div class="mb-3">
+              <input type="tel" class="form-control" id="tel" placeholder="Introduce tu número de teléfono" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Cuéntanos en qué le podemos ayudar."></textarea>
+            </div>
+            <div>
+              <button class="btn btn-primary fs-5 mb-3 mx-5">Envia tu Mensaje</button>
+            </div>
+        </form>
+    </div>
+      <!--Imagen Vectorial-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1b2a4e" fill-opacity="1" d="M0,64L48,101.3C96,139,192,213,288,202.7C384,192,480,96,576,90.7C672,85,768,171,864,192C960,213,1056,171,1152,133.3C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+<!------------------------------------------------
+            Aquí va el Footer (REDES SOCIALES)
   ------------------------------------------------> 
-
-<footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
+<footer id="nuestrasRedesSociales" class="w-100 d-flex align-items-center justify-content-center flex-wrap">
     <p class="fs-5 px-3 pt-3">1990-2022 Ríos&Bernal Asociados. &copy; Todos los Derechos Reservados 2022.</p>
-    <div id="iconos">
-        <a href="#"><i class="bi bi-facebook"></i></a><!--dejamos los enlaces vacios con una almohadilla solo, pero nosotros obviamente podríamos indicar hacia donde apunta el enlace-->
+    <div>
+        <a href="#"><i class="bi bi-facebook"></i></a>
         <a href="#"><i class="bi bi-twitter"></i></a>
         <a href="#"><i class="bi bi-instagram"></i></a>
     </div>
-
 </footer>
-
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+<!-----------------------------------------------
+            SCRIPTS
+  ------------------------------------------------> 
+    <!-- Mi archivo de Javascript-->
+    <script src="javascripts/javascripts"></script>
+    <!-- Bundle de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- Script para efecto de maquina de escribir-->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <!-- Aquí hacemos otro script para nuestro archivo de javascript-->
-   <script src="javascripts/javascripts"></script>
-
   </body>
 </html>
-
-<!--lg ese menu se va a colapsar si es q el tamaño de la ventan es menor a 992- 992 es el breakpoint de large. -->
-<!-- el font size en bootstrap es responsive pq lo define en rem.-->
