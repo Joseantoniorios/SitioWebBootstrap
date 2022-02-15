@@ -237,16 +237,16 @@
     </div>
     <form method="POST" data-netlify="true" action="#">    
           <div class="mb-3">            
-            <input type="input" class="form-control" id="name" name="name" placeholder="Escribe aquí tu nombre.">
+            <input type="input" class="form-control" id="name" name="name" placeholder="Escribe aquí tu nombre." required>
           </div> 
           <div class="mb-3">           
-            <input type="email" class="form-control" id="email" name="email" placeholder="Escribe aquí tu correo.">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Escribe aquí tu correo." required>
           </div>        
           <div class="mb-3">
-            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Introduce tu número de teléfono.">
+            <input type="tel" class="form-control" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="Introduce los 9 dígitos de tu número de teléfono." required>
           </div>
         <div class="mb-3">       
-          <textarea class="form-control" name="message" id="message" placeholder="Cuéntanos cómo podemos ayudarte." rows="4"></textarea>
+          <textarea class="form-control" name="message" id="message" placeholder="Cuéntanos cómo podemos ayudarte." rows="4" required></textarea>
         </div>
         <div class="mb-3 text-center">
           <button type="submit" class=" btn btn-primary w-30 fs-5">Envía tu Mensaje.</button>
